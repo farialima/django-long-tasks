@@ -5,9 +5,9 @@ Django-long-tasks is an asynchronous task management daemon, to execute long-run
 
 ## About
 
-Django-tasks is for a different usage from most other tasks frameworks (Celery, Cue, etc.): this is not for numerous, quick, light, tasks, but for few, long, heavy, tasks. Typical usage is to batch process data for each model object, and give information about the processing to the user.
+Django-long-tasks is for a different usage from most other tasks frameworks (Celery, Cue, etc.): this is not for numerous, quick, light, tasks, but for few, long, heavy, tasks. Typical usage is to batch process data for each model object, and give information about the processing to the user.
 
-Also, no other software or library is needed. Django-tasks simply uses the Django database as a queue (and Tasks are a simple model); and each task is spawned as its own process.
+Also, no other software or library is needed. Django-long-tasks simply uses the Django database as a queue (and Tasks are a simple model); and each task is spawned as its own process.
 
 Django-long-tasks was called django-tasks, but was renamed to avoid confusion with [the "official" Django-tasks](https://github.com/realOrangeOne/django-tasks) which is now part of Django core.
 
@@ -34,7 +34,7 @@ Python 3 is supported starting with version 0.98.
 
 This has been used in production for a hosted website in 2010; since then it has not been used much, but it has been updated recently, and all tests are passing.
 
-It is tested on Linux and MacOS, and it should run on Windows (per [issue 16](https://code.google.com/p/django-tasks/issues/detail?id=16)); and on MySQL and SQLite (with some caveats for SQLite, see below).
+It is tested on Linux and MacOS, and it should run on Windows (per [issue 16](https://code.google.com/p//issues/detail?id=16)); and on MySQL and SQLite (with some caveats for SQLite, see below).
 
 The current version is tested on Django 1.10.5 with Python 2.7 and Python 3.5. Getting it to work with earlier versions of Django should not be difficult.
 
@@ -42,7 +42,7 @@ The current version is tested on Django 1.10.5 with Python 2.7 and Python 3.5. G
 
 On Django 1.10, follow these instructions to install and use:
 
-1. Install djangotasks with pip: ```pip install git+git://github.com/farialima/django-tasks.git``` 
+1. Install djangotasks with pip: ```pip install git+git://github.com/farialima/django-long-tasks.git``` 
 
 2. Add ```djangotasks``` Django application
 
