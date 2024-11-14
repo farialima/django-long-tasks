@@ -1,13 +1,17 @@
 
-# Djangotasks
+# Django _long_ tasks
 
-Django-tasks is an asynchronous task management daemon, to execute long-running batch tasks (minutes, hours or even days) for Django applications.
+Django-long-tasks is an asynchronous task management daemon, to execute long-running batch tasks (minutes, hours or even days) for Django applications.
 
 ## About
 
 Django-tasks is for a different usage from most other tasks frameworks (Celery, Cue, etc.): this is not for numerous, quick, light, tasks, but for few, long, heavy, tasks. Typical usage is to batch process data for each model object, and give information about the processing to the user.
 
 Also, no other software or library is needed. Django-tasks simply uses the Django database as a queue (and Tasks are a simple model); and each task is spawned as its own process.
+
+Django-long-tasks was called django-tasks, but was renamed to avoid confusion with [the "official" Django-tasks](https://github.com/realOrangeOne/django-tasks) which is now part of Django core.
+
+This project is pretty much dead.
 
 ## Version history
 
